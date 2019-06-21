@@ -7,8 +7,7 @@ import Login from "./components/auth/Login";
 import Users from "./components/users/users";
 
 function App(props) {
-  const logout = e => {
-    e.preventDefault();
+  const logout = () => {
     localStorage.removeItem("token");
     props.history.push("/login");
   };
